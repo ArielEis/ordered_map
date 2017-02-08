@@ -55,39 +55,6 @@ OrderedMap.prototype.toString = function (){
     return arrayString;
 };
 
-let newArray = new OrderedMap();
-
-
-newArray.pop();
-
-
-for (let i = 0; i < 10; i++){
-    newArray.push({
-        key: 'Key #'+i,
-        value: i
-    });
-}
-
-console.log(newArray.toString());
-console.log(newArray.pop());
-console.log(newArray.toString());
-newArray.shift();
-console.log(newArray.toString());
-newArray.unshift({
-    key: 'Key #100',
-    value: 100
-});
-console.log(newArray.toString());
-
-
-function printObject(object) {
-    console.log('Key: '+object.key+'  |  value: '+object.value);
-}
-
-
-newArray.forEach(printObject);
-
-
 
 
 
